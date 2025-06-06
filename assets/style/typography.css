@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Averta', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./Averta/Averta-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Averta', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("./Averta/Averta-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Averta', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("./Averta/Averta-Semibold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Averta', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("./Averta/Averta-Bold.otf") format("opentype");
+}
