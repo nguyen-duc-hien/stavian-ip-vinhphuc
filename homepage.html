@@ -28,7 +28,7 @@
     <header>
         <div class="header">
             <!-- header pc -->
-            <div class="header-pc header-home hidden lg:block fixed top-0 w-full z-[5]">
+            <div class="header-pc bg-white hidden lg:block fixed top-0 w-full z-[5]">
                 <div class="container">
                     <!-- first-header -->
                     <!-- second-header -->
@@ -383,19 +383,506 @@
     </header>
     <main>
         <!-- -------------------- section 1 -------------------- -->
+        <style>
+            .home-banner {}
 
+            .home-banner .content-inner {
+                background: rgba(18, 150, 144, 0.84);
+                mask-image: url(/assets/image/home/ss1-mask.svg);
+                mask-repeat: no-repeat;
+                mask-position: top;
+                mask-size: cover;
+                width: 100%;
+                min-height: 196px;
+            }
+        </style>
+        <section class="">
+            <!-- Slider main container -->
+            <div id="home-swiper" class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="home-banner banner-1">
+                            <figure class=""><img class="max-lg:min-h-[340px] min-w-full"
+                                    src="/assets/image/home/home-banner.png" alt="banner">
+                            </figure>
+                            <div class="content-inner absolute bottom-0 z-[2] flex justify-center pt-24">
+                                <h2 class="text-heading-h8-bold font-[800] uppercase text-white">
+                                    KCN Stavian Vĩnh Phúc
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="home-banner banner-1">
+                            <figure class=""><img class="max-lg:min-h-[340px] min-w-full"
+                                    src="/assets/image/home/home-banner.png" alt="banner">
+                            </figure>
+                            <div class="content-inner absolute bottom-0 z-[2] flex justify-center pt-24">
+                                <h2 class="text-heading-h8-bold font-[800] uppercase text-white">
+                                    KCN Stavian Vĩnh Phúc
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="home-banner banner-1">
+                            <figure class=""><img class="max-lg:min-h-[340px] min-w-full"
+                                    src="/assets/image/home/home-banner.png" alt="banner">
+                            </figure>
+                            <div class="content-inner absolute bottom-0 z-[2] flex justify-center pt-24">
+                                <h2 class="text-heading-h8-bold font-[800] uppercase text-white">
+                                    KCN Stavian Vĩnh Phúc
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="home-pagin swiper-pagination !bottom-[34px]"></div>
+                <!-- If we need navigation buttons -->
+                <div class="home-prev lg:left-14 swiper-button-prev"></div>
+                <div class="home-next lg:right-14 swiper-button-next"></div>
+            </div>
+
+        </section>
         <!-- -------------------- section 2 -------------------- -->
+        <section class="py-10 lg:py-[100px]">
+            <div class="container">
+                <div class="mx-auto lg:max-w-[956px] flex flex-col gap-4 items-center justify-center">
+                    <h2 class="text-heading-h2-bold text-primary-1 uppercase text-center">Về chúng tôi</h2>
+                    <p class="text-body-lg-regular text-neutralc-800 text-center">
+                        Chào mừng đến với Khu Công Nghiệp Stavian Vĩnh Phúc. Chúng tôi cung cấp giải pháp đầu tư tối ưu,
+                        vị trí chiến lược, tiện
+                        ích vượt trội và ưu đãi hấp dẫn. Cùng khám phá tiềm năng phát triển bền vững tại đây.
+                    </p>
+                </div>
 
+                <div class="mt-10 lg:mt-16 grid grid-cols-12 gap-6">
+                    <div class="col-span-12 lg:col-span-5 lg:max-w-[587px] flex flex-col gap-4">
+                        <h2 class="text-heading-h4-bold text-primary-2">
+                            Quy mô dự án
+                        </h2>
+                        <p class="text-heading-h10-regular text-neutralc-800">
+                            Khu công nghiệp Vĩnh Phúc có diện tích giai đoạn 1 là 145,27 ha, với giai đoạn 1 (khu vực
+                            II) dự kiến hoàn thành vào
+                            tháng 7/2025. Sở hữu vị trí chiến lược cách sân bay Nội Bài 55 km, Hà Nội 70 km, và cao tốc
+                            Nội Bài – Lào Cai 8 km, cùng
+                            với hạ tầng đồng bộ, hiện đại (trạm cung cấp điện 110kV/35kV 150MVA, cung cấp nước sạch
+                            8.000 m³/ngày đêm, xử lý nước
+                            thải 4.000 m³/ngày đêm), KCN Vĩnh Phúc là điểm đến lý tưởng cho các nhà đầu tư.
+                        </p>
+                    </div>
+
+                    <div class="col-span-12 lg:col-span-7 rounded-lg overflow-hidden">
+                        <div id="about-swiper" class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <figure class=""><img class="min-w-full" src="/assets/image/home/about-img.png"
+                                            alt="img">
+                                    </figure>
+                                </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <figure class=""><img class="min-w-full" src="/assets/image/home/about-img.png"
+                                            alt="img">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="about-pagin swiper-pagination"></div>
+                            <!-- If we need navigation buttons -->
+                            <div class="about-prev lg:left-[28px] swiper-button-prev"></div>
+                            <div class="about-next lg:right-[28px] swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
         <!-- -------------------- section 3 -------------------- -->
-
+        <style>
+            .ss3-bg {
+                background: url(/assets/image/home/maps-bg.png) no-repeat bottom/cover;
+            }
+        </style>
+        <section class="ss3-bg relative max-lg:flex max-lg:flex-col-reverse max-lg:gap-6">
+            <div class="lg:w-[84.9%] lg:ml-auto">
+                <figure class="aspect-[1630/954]"><img class="min-w-full" src="/assets/image/home/maps-img.png"
+                        alt="maps"></figure>
+            </div>
+            <div class="container lg:absolute bottom-10 lg:bottom-[100px] left-1/2 lg:-translate-x-1/2">
+                <h2 class="text-heading-h2-bold text-primary-1 uppercase">Bản đồ vị trí</h2>
+                <p class="mt-2 lg:mt-4 text-heading-h8-semibold text-neutralc-800 ">KCN Stavian Vĩnh Phúc là điểm đến
+                    <br class="hidden lg:block">lý tưởng cho các nhà đầu tư.
+                </p>
+                <a href="#" class="mt-4 lg:mt-12 button">Tìm hiểu thêm</a>
+            </div>
+        </section>
         <!-- -------------------- section 4 -------------------- -->
-
+        <section class="min-h-[80vh] bg-white"></section>
         <!-- -------------------- section 5 -------------------- -->
-
+        <section class="py-10 lg:py-[120px]">
+            <div class="container">
+                <div class="mx-auto lg:max-w-[924px] flex flex-col gap-4 items-center justify-center">
+                    <h2 class="text-heading-h2-bold text-primary-1 uppercase text-center">Tin tức</h2>
+                    <p class="text-body-lg-regular text-neutralc-800 text-center">
+                        Chào mừng đến với Khu Công Nghiệp Stavian Vĩnh Phúc. Chúng tôi cung cấp giải pháp đầu tư tối ưu,
+                        vị trí chiến lược, tiện
+                        ích vượt trội và ưu đãi hấp dẫn. Cùng khám phá tiềm năng phát triển bền vững tại đây.
+                    </p>
+                    <a href="#" class="mt-4 button">Tìm hiểu thêm</a>
+                </div>
+            </div>
+            <div class="mt-10 lg:mt-16 px-6 lg:px-0">
+                <div id="news-swiper" class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="news-card">
+                                    <figure class=""><img class="aspect-[624/312] min-w-full"
+                                            src="/assets/image/home/news-img.png" alt="img">
+                                    </figure>
+                                    <div class="px-8 py-6 flex flex-col gap-[14px]">
+                                        <h2 class="text-heading-h9-semibold text-neutralc-8 truncate-2row min-h-2lh">
+                                            Chào
+                                            mừng đến với Khu Công
+                                            Nghiệp Stavian Vĩnh Phúc</h2>
+                                        <p class="text-body-lg-regular text-neutralc-5">
+                                            30.12.2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="news-card">
+                                    <figure class=""><img class="aspect-[624/312] min-w-full"
+                                            src="/assets/image/home/news-img.png" alt="img">
+                                    </figure>
+                                    <div class="px-8 py-6 flex flex-col gap-[14px]">
+                                        <h2 class="text-heading-h9-semibold text-neutralc-8 truncate-2row min-h-2lh">
+                                            Chào
+                                            mừng đến với Khu Công
+                                            Nghiệp Stavian Vĩnh Phúc</h2>
+                                        <p class="text-body-lg-regular text-neutralc-5">
+                                            30.12.2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="news-card">
+                                    <figure class=""><img class="aspect-[624/312] min-w-full"
+                                            src="/assets/image/home/news-img.png" alt="img">
+                                    </figure>
+                                    <div class="px-8 py-6 flex flex-col gap-[14px]">
+                                        <h2 class="text-heading-h9-semibold text-neutralc-8 truncate-2row min-h-2lh">
+                                            Chào
+                                            mừng đến với Khu Công
+                                            Nghiệp Stavian Vĩnh Phúc</h2>
+                                        <p class="text-body-lg-regular text-neutralc-5">
+                                            30.12.2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="news-card">
+                                    <figure class=""><img class="aspect-[624/312] min-w-full"
+                                            src="/assets/image/home/news-img.png" alt="img">
+                                    </figure>
+                                    <div class="px-8 py-6 flex flex-col gap-[14px]">
+                                        <h2 class="text-heading-h9-semibold text-neutralc-8 truncate-2row min-h-2lh">
+                                            Chào
+                                            mừng đến với Khu Công
+                                            Nghiệp Stavian Vĩnh Phúc</h2>
+                                        <p class="text-body-lg-regular text-neutralc-5">
+                                            30.12.2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- -------------------- section 6 -------------------- -->
+        <style>
+            .home-tab-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 32px;
+            }
+
+            .home-tab-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 0;
+                border-bottom: 2px solid;
+                border-color: transparent;
+                color: #999;
+                cursor: pointer;
+            }
+
+            .home-tab-item:hover,
+            .home-tab-item.active {
+                border-color: #0F5F5A;
+                color: #0F5F5A;
+            }
+
+            .home-tab-view {
+                display: none;
+            }
+
+            .home-tab-view.active {
+                display: block;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const tabItems = document.querySelectorAll('.home-tab-item');
+                const tabViews = document.querySelectorAll('.home-tab-view');
+
+                // Hàm kích hoạt tab
+                function activateTab(index) {
+                    tabItems.forEach((item, i) => {
+                        item.classList.toggle('active', i === index);
+                        tabViews[i].classList.toggle('active', i === index);
+                    });
+                }
+
+                // Gán sự kiện click cho từng tab
+                tabItems.forEach((item, index) => {
+                    item.addEventListener('click', () => {
+                        activateTab(index);
+                    });
+                });
+
+                // Kích hoạt tab đầu tiên khi load trang
+                activateTab(0);
+            });
+
+
+        </script>
+        <section class="bg-[#E9FCFC] py-10 lg:py-[120px]">
+            <div class="container">
+                <h2 class="text-heading-h2-bold text-primary-1 uppercase text-center">Mạng lưới đối tác chiến lược</h2>
+                <div class="mt-6">
+                    <div class="home-tab-wrap">
+                        <div class="home-tab-item text-heading-h9-semibold" data-tab="customer">
+                            Khách hàng
+                        </div>
+                        <div class="home-tab-item text-heading-h9-semibold" data-tab="partner">
+                            Đối tác
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 lg:mt-20">
+                <div id="customer" class="home-tab-view">
+                    <!-- swiper -->
+                    <div id="customer-swiper" class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="partner" class="home-tab-view">
+                    <div id="partner-swiper" class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide w-[auto]">
+                                <div class="customer-wrap">
+                                    <figure><img class="aspect-[133/111]" src="/assets/image/home/thaco.png"
+                                            alt="customer">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="button mt-8 lg:mt-14 mx-auto">Xem thêm</a>
+            </div>
+        </section>
 
         <!-- -------------------- section 7 -------------------- -->
-
+        <section class="py-10 lg:py-[120px]">
+            <div class="container">
+                <div class="grid grid-cols-12 gap-6">
+                    <div class="max-lg:order-2 col-span-12 lg:col-span-6">
+                        <figure class="lg:max-w-[717px] rounded-2xl overflow-hidden"><img
+                                class="min-w-full aspect-[717/506]" src="/assets/image/home/contact.png" alt="contact">
+                        </figure>
+                    </div>
+                    <div class="max-lg:order-1 col-span-12 lg:col-span-6">
+                        <form action="" class="w-full flex flex-wrap gap-6">
+                            <div class="w-full flex gap-6">
+                                <label class="input-label">
+                                    <input type="text" class="input-field" placeholder="Họ và tên">
+                                </label>
+                                <label class="input-label">
+                                    <input type="text" class="input-field" placeholder="Địa chỉ">
+                                </label>
+                            </div>
+                            <div class="w-full flex gap-6">
+                                <label class="input-label">
+                                    <input type="text" class="input-field" placeholder="Số điện thoại">
+                                </label>
+                                <label class="input-label">
+                                    <input type="text" class="input-field" placeholder="Địa chỉ email">
+                                </label>
+                            </div>
+                            <label class="input-label">
+                                <input type="text" class="input-field" placeholder="Công ty">
+                            </label>
+                            <label class="input-label">
+                                <textarea rows="4" class="input-field" placeholder="Nội dung"></textarea>
+                            </label>
+                            <button class="button mt-2">Gửi thông tin</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- -------------------- section 7 -------------------- -->
 
         <!-- -------------------- section 8 -------------------- -->
@@ -530,49 +1017,68 @@
             loop: true,
             // autoplay: true,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".home-pagin",
                 clickable: true,
+            },
+            navigation: {
+                nextEl: '.home-next',
+                prevEl: '.home-prev',
             },
         });
 
-        const swiper3 = new Swiper('#review-swiper', {
+        const swiper2 = new Swiper('#about-swiper', {
+            slidesPerView: 1,
+            navigation: true,
+            loop: true,
+            // autoplay: true,
+            pagination: {
+                el: ".about-pagin",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.about-next',
+                prevEl: '.about-prev',
+            },
+        });
+        const swiper3 = new Swiper('#news-swiper', {
             slidesPerView: 1,
             spaceBetween: 24,
-            centeredSlides: true,
+            navigation: true,
             loop: true,
-            autoplay: {
-                delay: 50000,
-                disableOnInteraction: false,
-            },
-            speed: 1000,
+            // autoplay: true,
             breakpoints: {
                 768: {
-                    slidesPerView: 1.5,
-                },
-                992: {
                     slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 2.2,
+                    spaceBetween: 24,
                 },
                 1280: {
-                    slidesPerView: 2.2,
-                },
-                1440: {
-                    slidesPerView: 2.2,
-                },
-            },
-
-            pagination: {
-                el: '.review-swiper-pagination',
-                clickable: true,
-            },
-
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                }
+            }
+        });
+        const swiper4 = new Swiper('#customer-swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 24,
+            loop: true,
+            speed: 5000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
             },
         });
+        const swiper5 = new Swiper('#partner-swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 24,
+            loop: true,
+            speed: 5000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+        });
+
+
     </script>
 </body>
 
