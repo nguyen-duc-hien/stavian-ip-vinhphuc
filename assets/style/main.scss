@@ -1222,7 +1222,7 @@ hr {
 }
 
 .sub-banner {
-  background: url(../..../../assets/image/sub-banner.png) no-repeat left/cover;
+  background: url(../../assets/image/sub-banner.png) no-repeat left/cover;
 }
 
 .figure-hover {
@@ -1585,7 +1585,7 @@ hr {
 }
 .footer {
   &-bg {
-    background: url(../..../../assets/image/footer-bg.png) no-repeat right/cover;
+    background: url(../../assets/image/footer-bg.png) no-repeat right/cover;
   }
   // &-first-row {
   //   position: relative;
@@ -1869,8 +1869,7 @@ hr {
 
 // homepage
 .ss4-bg-right {
-  background: url(../../assets/image/home/ss4-bg-right.svg) no-repeat bottom /
-    cover;
+  background: url(/assets/image/home/ss4-bg-right.svg) no-repeat bottom / cover;
 }
 
 .home-item {
@@ -1918,8 +1917,7 @@ hr {
 
 .s4-3-bg {
   position: relative;
-  background: url(../../assets/image/home/s4-swiper.png) no-repeat center /
-    cover;
+  background: url(/assets/image/home/s4-swiper.png) no-repeat center / cover;
 
   &::before {
     content: "";
