@@ -1,0 +1,8 @@
+/* Averta */
+@font-face {
+  font-family: 'Averta';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../Averta/Averta-Regular.otf) format('opentype');
+}
