@@ -2307,8 +2307,19 @@ hr.footer-divider {
           justify-content: center;
   gap: 20px;
 }
+@media (max-width: 992px) {
+  .s4-3-icon {
+    padding: 24px;
+  }
+}
 .s4-3-icon svg path {
   fill: var(--accent-1);
+}
+@media (max-width: 992px) {
+  .s4-3-icon svg {
+    width: 60px;
+    height: 60px;
+  }
 }
 .s4-3-icon p {
   color: var(--accent-1);

@@ -1931,9 +1931,18 @@ hr {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  @media (max-width: 992px) {
+    padding: 24px;
+  }
   svg {
     path {
       fill: var(--accent-1);
+    }
+  }
+  @media (max-width: 992px) {
+    svg {
+      width: 60px;
+      height: 60px;
     }
   }
   p {
