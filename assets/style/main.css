@@ -2270,6 +2270,44 @@ hr.footer-divider {
   transition: all 0.5s ease;
 }
 
+.home-tab-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 32px;
+}
+.home-tab-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px 0;
+  border-bottom: 2px solid transparent;
+  color: #999;
+  cursor: pointer;
+}
+.home-tab-item:hover, .home-tab-item.active {
+  border-color: #0f5f5a;
+  color: #0f5f5a;
+}
+.home-tab-view {
+  display: none;
+}
+.home-tab-view.active {
+  display: block;
+}
+
 .home-view {
   display: none;
   width: 100%;
@@ -2354,6 +2392,13 @@ hr.footer-divider {
   border-radius: 16px;
   border: 1px solid #e8e8e8;
   background: #fff;
+}
+.customer-wrap:hover {
+  border: 3px solid var(--accent-1);
+}
+.customer-wrap.partner {
+  width: 100%;
+  height: 137px;
 }
 
 .project-button {
