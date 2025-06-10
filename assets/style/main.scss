@@ -1980,3 +1980,131 @@ hr {
 
   background: #fff;
 }
+
+// project content
+.project {
+  &-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 8px;
+    background: var(--neutralc-50);
+    color: var(--neutralc-600);
+    .icon {
+      display: none;
+    }
+    &:hover,
+    &.active {
+      color: var(--white);
+      background: linear-gradient(90deg, #0f5f5a 0%, #008e86 100%);
+      .icon {
+        display: block;
+      }
+    }
+  }
+  &-view {
+    display: none;
+    .context {
+      // position: absolute;
+      // padding: 20px;
+      opacity: 0;
+      transform: translateY(0);
+      transition: all 0.6s ease;
+    }
+    .image {
+      opacity: 0;
+      border-radius: 16px;
+      border: 1px solid #d4d4d4;
+      transition: all 0.6s ease;
+    }
+    &.active {
+      display: grid;
+      .context.show {
+        // hover apply
+        opacity: 1;
+        transform: translateY(-20px);
+        transition: all 0.6s ease;
+      }
+      .image.show {
+        opacity: 1;
+        transition: all 0.6s ease;
+      }
+    }
+  }
+}
+.context {
+  &-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px 40px;
+    gap: 8px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 81, 77, 0) 56.85%,
+      rgba(0, 81, 77, 0.73) 92.74%
+    );
+    transition: all 0.3s ease;
+    @media (max-width: 992px) {
+      padding: 24px;
+    }
+
+    .desc {
+      max-height: 0;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    @media (max-width: 768px) {
+      figure > img {
+        min-height: 500px;
+      }
+    }
+
+    &:hover {
+      .context-hover {
+        backdrop-filter: blur(5px);
+        background: rgba(0, 81, 77, 0.73);
+        transition: all 0.3s ease;
+        .desc {
+          max-height: 400px;
+          opacity: 1;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}
+.download-hover {
+  padding: 21px 16px;
+  border-radius: 8px;
+  gap: 0;
+  .icon {
+    max-width: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    background: var(--accent-5);
+    .icon {
+      max-width: 56px;
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+  }
+}
