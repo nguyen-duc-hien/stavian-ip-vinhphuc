@@ -454,7 +454,8 @@
                             <figure class="hidden md:block"><img src="/assets/image/esg/left-vertical.svg" alt="icon">
                             </figure>
                             <div class="flex flex-col gap-8">
-                                <figure><img src="/assets/image/esg/env.svg" alt="env"></figure>
+                                <figure class="max-md:w-4/6 mx-auto"><img src="/assets/image/esg/env.svg" alt="env">
+                                </figure>
                                 <p class="text-heading-h6-bold text-[#f0fffc] uppercase text-center">ENVIRONMENT</p>
                             </div>
                         </div>
@@ -465,7 +466,8 @@
                             <figure class="hidden md:block"><img src="/assets/image/esg/center-vertical.svg" alt="icon">
                             </figure>
                             <div class="flex flex-col gap-8">
-                                <figure><img src="/assets/image/esg/social.svg" alt="env"></figure>
+                                <figure class="max-md:w-4/6 mx-auto"><img src="/assets/image/esg/social.svg" alt="env">
+                                </figure>
                                 <p class="text-heading-h6-bold text-[#f0fffc] uppercase text-center">SOCIAL</p>
                             </div>
                         </div>
@@ -477,7 +479,8 @@
                             <figure class="hidden md:block"><img src="/assets/image/esg/right-vertical.svg" alt="icon">
                             </figure>
                             <div class="flex flex-col gap-8">
-                                <figure><img src="/assets/image/esg/gov.svg" alt="env"></figure>
+                                <figure class="max-md:w-4/6 mx-auto"><img src="/assets/image/esg/gov.svg" alt="env">
+                                </figure>
                                 <p class="text-heading-h6-bold text-[#f0fffc] uppercase text-center">GOVERNANCE</p>
                             </div>
                         </div>
@@ -486,11 +489,247 @@
             </div>
         </section>
         <!-- -------------------- section 4 -------------------- -->
+        <style>
+            .text-mask {
+                background: url('/assets/image/esg/text-image.png') 0 0 / cover no-repeat;
+                /* color: #de466c; */
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+            }
+
+            .items-case {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .items-case:nth-child(2n+2) {
+                flex-direction: column-reverse;
+            }
+
+            @media(max-width:992px) {
+                .items-case:nth-child(2n+2) {
+                    flex-direction: column;
+                }
+            }
+
+            @media(min-width:552px) and (max-width:992px) {
+                .items-case {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 24px;
+                }
+
+                .items-case:nth-child(2n+2) .items-text {
+                    order: 2;
+                }
+            }
+        </style>
+        <section class="py-10 lg:pt-[120px] lg:pb-20">
+            <div class="container">
+                <div class="flex flex-col gap-[22px] items-start">
+                    <div class="flex items-end gap-2">
+                        <!-- <h2 class="text-[100px] lg:text-[148px] font-[800] leading-[100%] uppercase text-mask">E</h2> -->
+                        <figure class="pb-4"><img src="/assets/image/esg/e.png" alt="e"></figure>
+                        <h2 class="text-heading-h1-bold font-[800] text-accent-1">nvironment</h2>
+                    </div>
+                    <div class="text-body-lg-regular text-neutralc-800">
+                        KCN Thái Hòa - Liễn Sơn - Liên Hòa đặt trọng tâm vào bảo vệ môi trường, hướng tới một khu công
+                        nghiệp bền vững và thân
+                        thiện với thiên nhiên. Với 20% diện tích dành cho không gian xanh công cộng, chúng tôi tạo nền
+                        móng cho các sáng kiến
+                        phát triển mảng xanh, góp phần cải thiện chất lượng không khí và hỗ trợ mục tiêu trung hòa
+                        carbon của Việt Nam vào năm
+                        2050. KCN Thái Hòa cam kết xây dựng một môi trường sản xuất xanh, đồng hành cùng các sáng kiến
+                        giảm thiểu tác động đến
+                        khí hậu.
+                    </div>
+                </div>
+
+                <div class="mt-10 lg:mt-16">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <div class="items-case">
+                            <div class="items-text p-6 bg-accent-5 flex flex-col gap-2 rounded-2xl">
+                                <h2 class="text-heading-h10-semibold text-neutralc-900">Môi Trường Xanh</h2>
+                                <p class="text-body-md-regular text-neutralc-800 truncate-5row">
+                                    Ưu tiên cải thiện chất lượng nước với công nghệ xử lý tiên tiến, giảm thiểu rủi ro ô
+                                    nhiễm. Chúng tôi hướng tới xây dựng
+                                    môi trường sống an toàn cho cộng đồng xung quanh.
+                                </p>
+                            </div>
+                            <figure class="items-image rounded-2xl overflow-hidden"><img
+                                    class="min-w-full aspect-[767/431]" src="/assets/image/esg/img-item.png" alt="item">
+                            </figure>
+                        </div>
+                        <div class="items-case">
+                            <div class="items-text p-6 bg-accent-5 flex flex-col gap-2 rounded-2xl">
+                                <h2 class="text-heading-h10-semibold text-neutralc-900">Môi Trường Xanh</h2>
+                                <p class="text-body-md-regular text-neutralc-800 truncate-5row">
+                                    Ưu tiên cải thiện chất lượng nước với công nghệ xử lý tiên tiến, giảm thiểu rủi ro ô
+                                    nhiễm. Chúng tôi hướng tới xây dựng
+                                    môi trường sống an toàn cho cộng đồng xung quanh.
+                                </p>
+                            </div>
+                            <figure class="items-image rounded-2xl overflow-hidden"><img
+                                    class="min-w-full aspect-[767/431]" src="/assets/image/esg/img-item.png" alt="item">
+                            </figure>
+                        </div>
+                        <div class="items-case">
+                            <div class="items-text p-6 bg-accent-5 flex flex-col gap-2 rounded-2xl">
+                                <h2 class="text-heading-h10-semibold text-neutralc-900">Môi Trường Xanh</h2>
+                                <p class="text-body-md-regular text-neutralc-800 truncate-5row">
+                                    Ưu tiên cải thiện chất lượng nước với công nghệ xử lý tiên tiến, giảm thiểu rủi ro ô
+                                    nhiễm. Chúng tôi hướng tới xây dựng
+                                    môi trường sống an toàn cho cộng đồng xung quanh.
+                                </p>
+                            </div>
+                            <figure class="items-image rounded-2xl overflow-hidden"><img
+                                    class="min-w-full aspect-[767/431]" src="/assets/image/esg/img-item.png" alt="item">
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- -------------------- section 5 -------------------- -->
+        <section class="py-10 lg:py-20">
+            <div class="container">
+                <div class="flex flex-col gap-[22px] items-end">
+                    <div class="flex items-end gap-2">
+                        <!-- <h2 class="text-[100px] lg:text-[148px] font-[800] leading-[100%] uppercase text-mask">E</h2> -->
+                        <figure class="pb-4"><img src="/assets/image/esg/s.png" alt="s"></figure>
+                        <h2 class="text-heading-h1-bold font-[800] text-accent-1">ocial</h2>
+                    </div>
+                    <div class="hidden text-body-lg-regular text-neutralc-800">
+                        KCN Thái Hòa - Liễn Sơn - Liên Hòa đặt trọng tâm vào bảo vệ môi trường, hướng tới một khu công
+                        nghiệp bền vững và thân
+                        thiện với thiên nhiên. Với 20% diện tích dành cho không gian xanh công cộng, chúng tôi tạo nền
+                        móng cho các sáng kiến
+                        phát triển mảng xanh, góp phần cải thiện chất lượng không khí và hỗ trợ mục tiêu trung hòa
+                        carbon của Việt Nam vào năm
+                        2050. KCN Thái Hòa cam kết xây dựng một môi trường sản xuất xanh, đồng hành cùng các sáng kiến
+                        giảm thiểu tác động đến
+                        khí hậu.
+                    </div>
+                </div>
 
+                <div class="mt-10 lg:mt-16">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <div class="items-case">
+                            <div class="items-text p-6 bg-accent-5 flex flex-col gap-2 rounded-2xl">
+                                <h2 class="text-heading-h10-semibold text-neutralc-900">Môi Trường Xanh</h2>
+                                <p class="text-body-md-regular text-neutralc-800 truncate-5row">
+                                    Ưu tiên cải thiện chất lượng nước với công nghệ xử lý tiên tiến, giảm thiểu rủi ro ô
+                                    nhiễm. Chúng tôi hướng tới xây dựng
+                                    môi trường sống an toàn cho cộng đồng xung quanh.
+                                </p>
+                            </div>
+                            <figure class="items-image rounded-2xl overflow-hidden"><img
+                                    class="min-w-full aspect-[767/431]" src="/assets/image/esg/img-item.png" alt="item">
+                            </figure>
+                        </div>
+                        <div class="items-case">
+                            <div class="items-text p-6 bg-accent-5 flex flex-col gap-2 rounded-2xl">
+                                <h2 class="text-heading-h10-semibold text-neutralc-900">Môi Trường Xanh</h2>
+                                <p class="text-body-md-regular text-neutralc-800 truncate-5row">
+                                    Ưu tiên cải thiện chất lượng nước với công nghệ xử lý tiên tiến, giảm thiểu rủi ro ô
+                                    nhiễm. Chúng tôi hướng tới xây dựng
+                                    môi trường sống an toàn cho cộng đồng xung quanh.
+                                </p>
+                            </div>
+                            <figure class="items-image rounded-2xl overflow-hidden"><img
+                                    class="min-w-full aspect-[767/431]" src="/assets/image/esg/img-item.png" alt="item">
+                            </figure>
+                        </div>
+                        <div class="items-case">
+                            <div class="items-text p-6 bg-accent-5 flex flex-col gap-2 rounded-2xl">
+                                <h2 class="text-heading-h10-semibold text-neutralc-900">Môi Trường Xanh</h2>
+                                <p class="text-body-md-regular text-neutralc-800 truncate-5row">
+                                    Ưu tiên cải thiện chất lượng nước với công nghệ xử lý tiên tiến, giảm thiểu rủi ro ô
+                                    nhiễm. Chúng tôi hướng tới xây dựng
+                                    môi trường sống an toàn cho cộng đồng xung quanh.
+                                </p>
+                            </div>
+                            <figure class="items-image rounded-2xl overflow-hidden"><img
+                                    class="min-w-full aspect-[767/431]" src="/assets/image/esg/img-item.png" alt="item">
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- -------------------- section 6 -------------------- -->
+        <section class="py-10 lg:pt-20 lg:pb-[120px]">
+            <div class="container">
+                <div class="flex flex-col gap-[22px] items-end">
+                    <div class="flex items-end gap-2">
+                        <!-- <h2 class="text-[100px] lg:text-[148px] font-[800] leading-[100%] uppercase text-mask">E</h2> -->
+                        <figure class="pb-4"><img src="/assets/image/esg/g.png" alt="g"></figure>
+                        <h2 class="text-heading-h1-bold font-[800] text-accent-1">overnance</h2>
+                    </div>
+                    <div class="hidden text-body-lg-regular text-neutralc-800">
+                        KCN Thái Hòa - Liễn Sơn - Liên Hòa đặt trọng tâm vào bảo vệ môi trường, hướng tới một khu công
+                        nghiệp bền vững và thân
+                        thiện với thiên nhiên. Với 20% diện tích dành cho không gian xanh công cộng, chúng tôi tạo nền
+                        móng cho các sáng kiến
+                        phát triển mảng xanh, góp phần cải thiện chất lượng không khí và hỗ trợ mục tiêu trung hòa
+                        carbon của Việt Nam vào năm
+                        2050. KCN Thái Hòa cam kết xây dựng một môi trường sản xuất xanh, đồng hành cùng các sáng kiến
+                        giảm thiểu tác động đến
+                        khí hậu.
+                    </div>
+                </div>
 
+                <div class="mt-10 lg:mt-16">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <div class="items-case">
+                            <div class="items-text p-6 bg-accent-5 flex flex-col gap-2 rounded-2xl">
+                                <h2 class="text-heading-h10-semibold text-neutralc-900">Môi Trường Xanh</h2>
+                                <p class="text-body-md-regular text-neutralc-800 truncate-5row">
+                                    Ưu tiên cải thiện chất lượng nước với công nghệ xử lý tiên tiến, giảm thiểu rủi ro ô
+                                    nhiễm. Chúng tôi hướng tới xây dựng
+                                    môi trường sống an toàn cho cộng đồng xung quanh.
+                                </p>
+                            </div>
+                            <figure class="items-image rounded-2xl overflow-hidden"><img
+                                    class="min-w-full aspect-[767/431]" src="/assets/image/esg/img-item.png" alt="item">
+                            </figure>
+                        </div>
+                        <div class="items-case">
+                            <div class="items-text p-6 bg-accent-5 flex flex-col gap-2 rounded-2xl">
+                                <h2 class="text-heading-h10-semibold text-neutralc-900">Môi Trường Xanh</h2>
+                                <p class="text-body-md-regular text-neutralc-800 truncate-5row">
+                                    Ưu tiên cải thiện chất lượng nước với công nghệ xử lý tiên tiến, giảm thiểu rủi ro ô
+                                    nhiễm. Chúng tôi hướng tới xây dựng
+                                    môi trường sống an toàn cho cộng đồng xung quanh.
+                                </p>
+                            </div>
+                            <figure class="items-image rounded-2xl overflow-hidden"><img
+                                    class="min-w-full aspect-[767/431]" src="/assets/image/esg/img-item.png" alt="item">
+                            </figure>
+                        </div>
+                        <div class="items-case">
+                            <div class="items-text p-6 bg-accent-5 flex flex-col gap-2 rounded-2xl">
+                                <h2 class="text-heading-h10-semibold text-neutralc-900">Môi Trường Xanh</h2>
+                                <p class="text-body-md-regular text-neutralc-800 truncate-5row">
+                                    Ưu tiên cải thiện chất lượng nước với công nghệ xử lý tiên tiến, giảm thiểu rủi ro ô
+                                    nhiễm. Chúng tôi hướng tới xây dựng
+                                    môi trường sống an toàn cho cộng đồng xung quanh.
+                                </p>
+                            </div>
+                            <figure class="items-image rounded-2xl overflow-hidden"><img
+                                    class="min-w-full aspect-[767/431]" src="/assets/image/esg/img-item.png" alt="item">
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- -------------------- section 7 -------------------- -->
 
         <!-- -------------------- section 7 -------------------- -->
@@ -619,6 +858,38 @@
     <script defer src="/assets/js/header.js"></script>
     <script defer src="/assets/js/accordion.js"></script>
 
+    <script defer>
+        function setEqualHeight() {
+            const items = document.querySelectorAll('.items-case');
+
+            items.forEach(item => {
+                const textBlock = item.querySelector('.items-text');
+                const image = item.querySelector('.items-image img');
+
+                // Reset chiều cao cũ (tránh tích lũy)
+                textBlock.style.height = 'auto';
+
+                const applyHeight = () => {
+                    textBlock.style.height = image.offsetHeight + 'px';
+                };
+
+                if (image.complete) {
+                    applyHeight();
+                } else {
+                    image.onload = applyHeight;
+                }
+            });
+        }
+
+        // Gọi khi DOM load và resize
+        document.addEventListener('DOMContentLoaded', setEqualHeight);
+        window.addEventListener('resize', () => {
+            // Thêm delay tránh lag khi resize nhanh
+            clearTimeout(window.__resizeTimeout);
+            window.__resizeTimeout = setTimeout(setEqualHeight, 150);
+        });
+
+    </script>
     <!-- swiper script -->
     <script defer>
         const swiper = new Swiper('#industry-swiper', {
