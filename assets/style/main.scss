@@ -2179,8 +2179,7 @@ hr {
       }
       .title {
         @extend .text-heading-h9-semibold;
-        @extend .truncate-2row;
-        @extend .min-h-2lh;
+        @extend .truncate-3row;
         color: #151515;
       }
     }
@@ -2241,6 +2240,42 @@ hr {
           backdrop-filter: blur(11.300000190734863px);
           @extend .text-body-sm-semibold;
           color: var(--white);
+        }
+      }
+    }
+  }
+  &-content {
+    @extend .text-body-md-regular;
+    color: var(--neutralc-800);
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 48px;
+    figure {
+      border-radius: 16px;
+      overflow: hidden;
+    }
+  }
+  &-share {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    .share {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      .items {
+        svg {
+          path {
+            fill: #121416;
+          }
+        }
+        &:hover {
+          svg {
+            path {
+              fill: var(--accent-1);
+            }
+          }
         }
       }
     }

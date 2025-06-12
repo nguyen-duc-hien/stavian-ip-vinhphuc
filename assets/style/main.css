@@ -747,17 +747,17 @@ select:focus {
 .text-body-lg-regular, .location-item, .sub-item a, .input-label .input-field {
   font-weight: 400;
 }
-.text-body-md, .text-body-md-regular, .news-item.first .desc .date, .news-item .desc .date, .search-box, .input-label select.input-field, .text-body-md-medium, .text-body-md-semibold, .input-label .input-title, .text-body-md-bold, .text-body-md-uppercase {
+.text-body-md, .text-body-md-regular, .news-content, .news-item.first .desc .date, .news-item .desc .date, .search-box, .input-label select.input-field, .text-body-md-medium, .text-body-md-semibold, .input-label .input-title, .text-body-md-bold, .text-body-md-uppercase {
   font-size: 16px;
   line-height: 150%;
 }
 @media screen and (max-width: 1280px) {
-  .text-body-md, .text-body-md-regular, .news-item.first .desc .date, .news-item .desc .date, .search-box, .input-label select.input-field, .text-body-md-medium, .text-body-md-semibold, .input-label .input-title, .text-body-md-bold, .text-body-md-uppercase {
+  .text-body-md, .text-body-md-regular, .news-content, .news-item.first .desc .date, .news-item .desc .date, .search-box, .input-label select.input-field, .text-body-md-medium, .text-body-md-semibold, .input-label .input-title, .text-body-md-bold, .text-body-md-uppercase {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 992px) {
-  .text-body-md, .text-body-md-regular, .news-item.first .desc .date, .news-item .desc .date, .search-box, .input-label select.input-field, .text-body-md-medium, .text-body-md-semibold, .input-label .input-title, .text-body-md-bold, .text-body-md-uppercase {
+  .text-body-md, .text-body-md-regular, .news-content, .news-item.first .desc .date, .news-item .desc .date, .search-box, .input-label select.input-field, .text-body-md-medium, .text-body-md-semibold, .input-label .input-title, .text-body-md-bold, .text-body-md-uppercase {
     font-size: 14px;
   }
 }
@@ -774,7 +774,7 @@ select:focus {
 .text-body-md-medium {
   font-weight: 500;
 }
-.text-body-md-regular, .news-item.first .desc .date, .news-item .desc .date, .search-box, .input-label select.input-field {
+.text-body-md-regular, .news-content, .news-item.first .desc .date, .news-item .desc .date, .search-box, .input-label select.input-field {
   font-weight: 400;
 }
 .text-body-sm, .text-body-sm-regular, .text-body-sm-medium, .text-body-sm-semibold, .news-item.first .desc .special, .pagination .page-numbers, .text-body-sm-bold, .text-body-sm-uppercase {
@@ -838,7 +838,7 @@ select:focus {
   font-weight: 400;
 }
 
-.truncate, .truncate-6row, .truncate-5row, .truncate-4row, .truncate-3row, .truncate-2row, .news-item .desc .title, .truncate-1row {
+.truncate, .truncate-6row, .truncate-5row, .truncate-4row, .truncate-3row, .news-item .desc .title, .truncate-2row, .truncate-1row {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -846,10 +846,10 @@ select:focus {
 .truncate-1row {
   -webkit-line-clamp: 1;
 }
-.truncate-2row, .news-item .desc .title {
+.truncate-2row {
   -webkit-line-clamp: 2;
 }
-.truncate-3row {
+.truncate-3row, .news-item .desc .title {
   -webkit-line-clamp: 3;
 }
 .truncate-4row {
@@ -862,7 +862,7 @@ select:focus {
   -webkit-line-clamp: 6;
 }
 
-.min-h-2lh, .news-item .desc .title {
+.min-h-2lh {
   min-height: 2lh;
 }
 .min-h-3lh {
@@ -2656,4 +2656,45 @@ hr.footer-divider {
   -webkit-backdrop-filter: blur(11.3000001907px);
           backdrop-filter: blur(11.3000001907px);
   color: var(--white);
+}
+.news-content {
+  color: var(--neutralc-800);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 48px;
+  margin-top: 48px;
+}
+.news-content figure {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.news-share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+.news-share .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+}
+.news-share .share .items svg path {
+  fill: #121416;
+}
+.news-share .share .items:hover svg path {
+  fill: var(--accent-1);
 }
