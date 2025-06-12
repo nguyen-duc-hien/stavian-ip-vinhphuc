@@ -2147,3 +2147,102 @@ hr {
     }
   }
 }
+.news {
+  &-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    &.first-row {
+      flex-direction: row;
+    }
+    &:hover {
+      .title {
+        color: #151515;
+      }
+      .date {
+        color: #808080;
+      }
+    }
+    .figure {
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .desc {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .date {
+        @extend .text-body-md-regular;
+        color: #808080;
+      }
+      .title {
+        @extend .text-heading-h9-semibold;
+        @extend .truncate-2row;
+        @extend .min-h-2lh;
+        color: #151515;
+      }
+    }
+    &.first {
+      &:hover {
+        @extend .figure-hover;
+      }
+      .figure {
+        border-radius: 16px;
+        overflow: hidden;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 16px;
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 40.56%,
+            rgba(0, 0, 0, 0.4) 72.56%
+          );
+          z-index: 1;
+          user-select: none;
+        }
+      }
+      .desc {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        flex-direction: column-reverse;
+        z-index: 3;
+        @media (max-width: 992px) {
+          padding: 24px;
+        }
+        .date {
+          @extend .text-body-md-regular;
+          color: var(--white);
+        }
+        .title {
+          @extend .text-heading-h5-bold;
+          color: var(--white);
+        }
+        .special {
+          width: fit-content;
+          display: flex;
+          padding: 6px 16px;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          border-radius: 1000px;
+          border: 1px solid rgba(255, 255, 255, 0);
+          background: rgba(255, 255, 255, 0.15);
+          backdrop-filter: blur(11.300000190734863px);
+          @extend .text-body-sm-semibold;
+          color: var(--white);
+        }
+      }
+    }
+  }
+}
